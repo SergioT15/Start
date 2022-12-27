@@ -22,6 +22,32 @@
 // console.log(characterComparison(array));
 
 
+//2
+
+// 2. Написать приложение, получающее массив с вложенными массивами и возвращающее его “плоскую” версию.
+// Встроенный метод массивов flat использовать нельзя.
+// Например: [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]] => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// let array2 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+
+
+// const finalArr = [];
+
+// function unpackArr(arr){
+//     for(let i = 0; i < arr.length; i++) {
+//         if(Array.isArray(arr[i])){
+//             unpackArr(arr[i]);
+//         } else {
+//           finalArr.push(arr[i]);
+//         }
+//     }
+//     return finalArr;
+// }
+
+// console.log(unpackArr(array2));
+
+
+
 //3
 
 // 3. На вход приниаем массив целых чисел, который должен быть преобразован по следующим правилам:
@@ -31,30 +57,27 @@
 // solution([-6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20]);
 // returns "-6,-3-1,3-5,7-11,14,15,17-20"
 
-
-
 // let arr3 = [
-//   -6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20,
+//   -6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20
 // ];
 
-// function makeRage(arr) {
+// function makeRange(arr) {
 //   const finalArr = [];
 //   let intermediateArr = [];
 
 //   function mergeArr() {
 //     let arrToMerge = intermediateArr;
-    
-//     console.log(arrToMerge);
+
 //     if (intermediateArr.length >= 3) {
 //       const firstValue = intermediateArr[0];
 //       const lastValue = intermediateArr[intermediateArr.length - 1];
-//       arrToMerge = [`${firstValue} - ${lastValue}`];
+//       arrToMerge = [`${firstValue}-${lastValue}`];
 //     }
 //     finalArr.push(...arrToMerge);
 //     intermediateArr = [];
 //   }
 
-//   for (const [, value] of arr.entries()) {
+//   for (const value of arr) {
 //     const lastValue = intermediateArr[intermediateArr.length - 1];
 //     if (lastValue === undefined || value === lastValue + 1) {
 //       intermediateArr.push(value);
@@ -64,21 +87,11 @@
 //     }
 //   }
 
-//   return finalArr.join(",");
+//   return finalArr.join(", ");
 // }
-// console.log(makeRage(arr3));
+// console.log(makeRange(arr3));
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// Написать приложение, получающее массив с вложенными массивами и возвращающее его “плоскую” версию.
-// Встроенный метод массивов flat использовать нельзя.
-// Например: [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]] => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-// let array2 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
-
-// let  =[]
-// const unpack = (item)
-
 
 
 
