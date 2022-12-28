@@ -7,7 +7,7 @@
 //  Например ["asd", "afffd", "cc", "kk"].
 //  Для такого массива функция должна вернуть [true, false, false]
 
-let array1 = ["asd", "afffd", "cc", "kk"];
+const array1 = ["asd", "afffd", "cc", "kk"];
 
 function characterComparison(array) {
   return array

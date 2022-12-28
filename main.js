@@ -62,6 +62,7 @@
 // ];
 
 // function makeRange(arr) {
+//   arr.push(undefined);
 //   const finalArr = [];
 //   let intermediateArr = [];
 
